@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="ipaddress" label="Server" type="ipaddress" default="192.168.1.240" />
+    <setting id="profile" type="select" label="Profile" default="700k.HR" values="150k.LR|300.LR|500k.LR|500k.MR|700k.MR|1000k.MR|700k.HR|1000k.HR|2000k.HR|2000k.HD|4000k.HD|6000k.HD|Native.NR" />
+</settings>
