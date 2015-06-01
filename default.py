@@ -14,6 +14,7 @@ class Channel:
 addon = xbmcaddon.Addon()
 serverIp = addon.getSetting("ipaddress")
 profile = addon.getSetting("profile")
+port = addon.getSetting("ipport")
 
 if not serverIp:
     xbmcgui.Dialog().ok("PCTV", "IP not defined, go to configure and put the IP Address!")
@@ -21,6 +22,9 @@ if not serverIp:
 
 if not profile:
     profile = "500k.MR"
+
+if not port:
+    port = 80
 
 
 channels = []
@@ -52,7 +56,7 @@ addon_handle = int(sys.argv[1])
 xbmcplugin.setContent(addon_handle, 'movies')
 
 for item in channels:
-    url = 'http://{0}:80/TVC/Preview.m3u8?channel={1}&mode=m3u8&profile=m2ts.{2}'.format(serverIp, item.channelId, profile)
+    url = 'http://{0}:{3}/TVC/Preview.m3u8?channel={1}&mode=m3u8&profile=m2ts.{2}'.format(serverIp, item.channelId, profile, port)
     li = xbmcgui.ListItem(item.name, iconImage='DefaultVideo.png')
     xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 

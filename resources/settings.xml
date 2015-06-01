@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <setting id="ipaddress" label="Server" type="ipaddress" default="192.168.1.240" />
-    <setting id="profile" type="select" label="Profile" default="700k.HR" values="150k.LR|300.LR|500k.LR|500k.MR|700k.MR|1000k.MR|700k.HR|1000k.HR|2000k.HR|2000k.HD|4000k.HD|6000k.HD|Native.NR" />
+    <setting id="ipport" label="ServerPort" type="number" default="80"/>
+    <setting id="profile" type="select" label="Profile" default="700k.HR" values="m2ts.80k.LR|m2ts.150k.LR|m2ts.300k.LR|m2ts.500k.LR|m2ts.500k.MR|m2ts.700k.MR|m2ts.1000k.MR|m2ts.700k.HR|m2ts.1000k.HR|m2ts.2000k.HR|m2ts.4000k.HR|m2ts.2300k.LC|m2ts.4300k.LC|m2ts.6300k.LC|m2ts.11300k.LC|m2ts.15300k.LC|m2ts.2300k.MC|m2ts.4300k.MC|m2ts.6300k.MC|m2ts.8300k.MC|m2ts.15300k.MC|m2ts.2000k.HD|m2ts.4000k.HD|m2ts.6000k.HD|m2ts.8000k.HD|m2ts.15000k.HD|m2ts.Native.NR" />
 </settings>
